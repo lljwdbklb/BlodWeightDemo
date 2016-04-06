@@ -15,6 +15,15 @@
 		180B77B61CAD26B300031CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180B77B41CAD26B300031CF9 /* LaunchScreen.storyboard */; };
 		180B77C11CAD26B300031CF9 /* BlodWeightDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B77C01CAD26B300031CF9 /* BlodWeightDemoTests.m */; };
 		180B77CC1CAD26B300031CF9 /* BlodWeightDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B77CB1CAD26B300031CF9 /* BlodWeightDemoUITests.m */; };
+		180B77DB1CAE21BF00031CF9 /* BlueScalesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B77DA1CAE21BF00031CF9 /* BlueScalesData.m */; };
+		180B77E01CAE220700031CF9 /* LockScalesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B77DD1CAE220700031CF9 /* LockScalesData.m */; };
+		180B77E11CAE220700031CF9 /* TemporaryScalesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B77DF1CAE220700031CF9 /* TemporaryScalesData.m */; };
+		1818791F1CB4B8E5003B0322 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1818791E1CB4B8E5003B0322 /* libz.tbd */; };
+		181879211CB4B8EF003B0322 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181879201CB4B8EF003B0322 /* libc++.tbd */; };
+		18B36E691CB4AFE70015749A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B36E681CB4AFE70015749A /* Realm.framework */; };
+		18B36E711CB4B2A00015749A /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B36E701CB4B2A00015749A /* HistoryController.m */; };
+		18B36E741CB4B40B0015749A /* HistoryPersonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B36E731CB4B40B0015749A /* HistoryPersonData.m */; };
+		DB3836532E8EFB3FE200021C /* libPods-BlodWeightDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A87D8AE98407E98208A96C49 /* libPods-BlodWeightDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,22 @@
 		180B77C71CAD26B300031CF9 /* BlodWeightDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlodWeightDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180B77CB1CAD26B300031CF9 /* BlodWeightDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlodWeightDemoUITests.m; sourceTree = "<group>"; };
 		180B77CD1CAD26B300031CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180B77D91CAE21BF00031CF9 /* BlueScalesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueScalesData.h; sourceTree = "<group>"; };
+		180B77DA1CAE21BF00031CF9 /* BlueScalesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueScalesData.m; sourceTree = "<group>"; };
+		180B77DC1CAE220700031CF9 /* LockScalesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockScalesData.h; sourceTree = "<group>"; };
+		180B77DD1CAE220700031CF9 /* LockScalesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockScalesData.m; sourceTree = "<group>"; };
+		180B77DE1CAE220700031CF9 /* TemporaryScalesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemporaryScalesData.h; sourceTree = "<group>"; };
+		180B77DF1CAE220700031CF9 /* TemporaryScalesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemporaryScalesData.m; sourceTree = "<group>"; };
+		1818791E1CB4B8E5003B0322 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		181879201CB4B8EF003B0322 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		18B36E681CB4AFE70015749A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		18B36E6F1CB4B2A00015749A /* HistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryController.h; sourceTree = "<group>"; };
+		18B36E701CB4B2A00015749A /* HistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryController.m; sourceTree = "<group>"; };
+		18B36E721CB4B40B0015749A /* HistoryPersonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryPersonData.h; sourceTree = "<group>"; };
+		18B36E731CB4B40B0015749A /* HistoryPersonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryPersonData.m; sourceTree = "<group>"; };
+		5646C1AF1E505C3E91ACC57B /* Pods-BlodWeightDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlodWeightDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlodWeightDemo/Pods-BlodWeightDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5E17C934E20F1BE982271DC1 /* Pods-BlodWeightDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlodWeightDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlodWeightDemo/Pods-BlodWeightDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A87D8AE98407E98208A96C49 /* libPods-BlodWeightDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlodWeightDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181879211CB4B8EF003B0322 /* libc++.tbd in Frameworks */,
+				1818791F1CB4B8E5003B0322 /* libz.tbd in Frameworks */,
+				18B36E691CB4AFE70015749A /* Realm.framework in Frameworks */,
+				DB3836532E8EFB3FE200021C /* libPods-BlodWeightDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +114,8 @@
 				180B77BF1CAD26B300031CF9 /* BlodWeightDemoTests */,
 				180B77CA1CAD26B300031CF9 /* BlodWeightDemoUITests */,
 				180B77A41CAD26B300031CF9 /* Products */,
+				BA26D6CE31879043FE24523A /* Pods */,
+				AE1EC9E66D58C15ADF049348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +132,12 @@
 		180B77A51CAD26B300031CF9 /* BlodWeightDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18B36E671CB4AFDA0015749A /* lib */,
+				18B36E6B1CB4B23D0015749A /* Model */,
+				18B36E6C1CB4B2460015749A /* Blue */,
+				18B36E6E1CB4B2620015749A /* Controller */,
 				180B77A91CAD26B300031CF9 /* AppDelegate.h */,
 				180B77AA1CAD26B300031CF9 /* AppDelegate.m */,
-				180B77AC1CAD26B300031CF9 /* ViewController.h */,
-				180B77AD1CAD26B300031CF9 /* ViewController.m */,
 				180B77AF1CAD26B300031CF9 /* Main.storyboard */,
 				180B77B21CAD26B300031CF9 /* Assets.xcassets */,
 				180B77B41CAD26B300031CF9 /* LaunchScreen.storyboard */,
@@ -140,6 +173,66 @@
 			path = BlodWeightDemoUITests;
 			sourceTree = "<group>";
 		};
+		18B36E671CB4AFDA0015749A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				18B36E681CB4AFE70015749A /* Realm.framework */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		18B36E6B1CB4B23D0015749A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180B77DC1CAE220700031CF9 /* LockScalesData.h */,
+				180B77DD1CAE220700031CF9 /* LockScalesData.m */,
+				180B77DE1CAE220700031CF9 /* TemporaryScalesData.h */,
+				180B77DF1CAE220700031CF9 /* TemporaryScalesData.m */,
+				18B36E721CB4B40B0015749A /* HistoryPersonData.h */,
+				18B36E731CB4B40B0015749A /* HistoryPersonData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18B36E6C1CB4B2460015749A /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				180B77D91CAE21BF00031CF9 /* BlueScalesData.h */,
+				180B77DA1CAE21BF00031CF9 /* BlueScalesData.m */,
+			);
+			name = Blue;
+			sourceTree = "<group>";
+		};
+		18B36E6E1CB4B2620015749A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180B77AC1CAD26B300031CF9 /* ViewController.h */,
+				180B77AD1CAD26B300031CF9 /* ViewController.m */,
+				18B36E6F1CB4B2A00015749A /* HistoryController.h */,
+				18B36E701CB4B2A00015749A /* HistoryController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AE1EC9E66D58C15ADF049348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181879201CB4B8EF003B0322 /* libc++.tbd */,
+				1818791E1CB4B8E5003B0322 /* libz.tbd */,
+				A87D8AE98407E98208A96C49 /* libPods-BlodWeightDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA26D6CE31879043FE24523A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E17C934E20F1BE982271DC1 /* Pods-BlodWeightDemo.debug.xcconfig */,
+				5646C1AF1E505C3E91ACC57B /* Pods-BlodWeightDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180B77D01CAD26B300031CF9 /* Build configuration list for PBXNativeTarget "BlodWeightDemo" */;
 			buildPhases = (
+				45E185BEC4D1A6E6633422D4 /* Check Pods Manifest.lock */,
 				180B779F1CAD26B300031CF9 /* Sources */,
 				180B77A01CAD26B300031CF9 /* Frameworks */,
 				180B77A11CAD26B300031CF9 /* Resources */,
+				25A6E72BA9AA9A67A02F5600 /* Embed Pods Frameworks */,
+				DF32129BE6FE470AEB165719 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +303,7 @@
 				TargetAttributes = {
 					180B77A21CAD26B300031CF9 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 959SE5R72F;
 					};
 					180B77BB1CAD26B300031CF9 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -265,13 +362,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25A6E72BA9AA9A67A02F5600 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlodWeightDemo/Pods-BlodWeightDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45E185BEC4D1A6E6633422D4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF32129BE6FE470AEB165719 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlodWeightDemo/Pods-BlodWeightDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		180B779F1CAD26B300031CF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180B77DB1CAE21BF00031CF9 /* BlueScalesData.m in Sources */,
+				18B36E741CB4B40B0015749A /* HistoryPersonData.m in Sources */,
 				180B77AE1CAD26B300031CF9 /* ViewController.m in Sources */,
+				18B36E711CB4B2A00015749A /* HistoryController.m in Sources */,
+				180B77E01CAE220700031CF9 /* LockScalesData.m in Sources */,
 				180B77AB1CAD26B300031CF9 /* AppDelegate.m in Sources */,
+				180B77E11CAE220700031CF9 /* TemporaryScalesData.m in Sources */,
 				180B77A81CAD26B300031CF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,23 +559,43 @@
 		};
 		180B77D11CAD26B300031CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E17C934E20F1BE982271DC1 /* Pods-BlodWeightDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlodWeightDemo",
+				);
 				INFOPLIST_FILE = BlodWeightDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jun.BlodWeightDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jun.BlodWeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		180B77D21CAD26B300031CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5646C1AF1E505C3E91ACC57B /* Pods-BlodWeightDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlodWeightDemo",
+				);
 				INFOPLIST_FILE = BlodWeightDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jun.BlodWeightDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jun.BlodWeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +666,7 @@
 				180B77D21CAD26B300031CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180B77D31CAD26B300031CF9 /* Build configuration list for PBXNativeTarget "BlodWeightDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +675,7 @@
 				180B77D51CAD26B300031CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180B77D61CAD26B300031CF9 /* Build configuration list for PBXNativeTarget "BlodWeightDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +684,7 @@
 				180B77D81CAD26B300031CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
