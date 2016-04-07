@@ -50,7 +50,29 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(clickHistory)];
     
     [self installBlue];
+    
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [btn setBackgroundColor:[UIColor redColor]];
+//    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
+//    
+//    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
+//    view.userInteractionEnabled = YES;
+//    [view setBackgroundColor:[UIColor greenColor]];
+//    [btn addSubview:view];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap1:)];
+//    tap.delegate = self;
+//    
+//    [view addGestureRecognizer:tap];
 }
+
+//- (void)clickBtn {
+//    NSLog(@"11111");
+//}
+//
+//- (void)tap1:(UITapGestureRecognizer *)tap {
+//    NSLog(@"xxxx");
+//}
 
 - (void)clickHistory {
     [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"history"] animated:YES];
@@ -61,7 +83,7 @@
     BabyBluetooth *blu = [BabyBluetooth shareBabyBluetooth];
     
     __weak typeof(self) weekSelf = self;
-    [blu setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
+    [blu setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {//获取搜索到的设备
         if (![weekSelf.pers containsObject:peripheral]) {
             [weekSelf.pers addObject:peripheral];
             [weekSelf.tableView reloadData];
@@ -69,7 +91,7 @@
     }];
     
     [blu setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
-        if (peripheralName.length > 0) {
+        if (peripheralName.length > 0) {//设备过滤
             NSLog(@"%@",peripheralName);
             if ([peripheralName hasPrefix:@"B"]) {
                 return YES;
@@ -79,23 +101,23 @@
     }];
     
     
-    [blu setBlockOnDidUpdateName:^(CBPeripheral *peripheral) {
+    [blu setBlockOnDidUpdateName:^(CBPeripheral *peripheral) {//设备换名
         if ([weekSelf.pers containsObject:peripheral]) {
             [weekSelf.pers replaceObjectAtIndex:[weekSelf.pers indexOfObject:peripheral] withObject:peripheral];
         }
     }];
     
-    [blu setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {
+    [blu setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {//链接设备
         [weekSelf.connectLab setText:@"连接设备成功（没准备好）"];
         NSArray *sers = [NSArray arrayWithObjects:[CBUUID UUIDWithString:@"FFF0"],[CBUUID UUIDWithString:@"FFD0"],[CBUUID UUIDWithString:@"180F"], nil];
         [peripheral discoverServices:sers];
     }];
     
-    [blu setBlockOnDisconnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
+    [blu setBlockOnDisconnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {//设备断开连接
         [weekSelf.connectLab setText:@"设备断开连接"];
     }];
     
-    [blu setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {
+    [blu setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {//发现到设备服务
         [weekSelf.connectLab setText:@"查找特征值(已连接，准备中)"];
         for (CBService *service in peripheral.services) {
             if ([service.UUID.UUIDString isEqualToString:@"FFF0"]) {//读
@@ -108,7 +130,7 @@
         }
     }];
     
-    [blu setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
+    [blu setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {//发现到服务特征值
         [weekSelf.connectLab setText:@"设置特征值(准备好)"];
         if ([service.UUID.UUIDString isEqualToString:@"FFF0"]) {
             [peripheral setNotifyValue:YES forCharacteristic:[service.characteristics firstObject]];
@@ -121,11 +143,11 @@
     }];
     
     
-    [blu setBlockOnDidUpdateNotificationStateForCharacteristic:^(CBCharacteristic *characteristic, NSError *error) {
+    [blu setBlockOnDidUpdateNotificationStateForCharacteristic:^(CBCharacteristic *characteristic, NSError *error) {//服务特征值通知更变
     }];
     
     
-    [blu setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
+    [blu setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {//特征值数据Value更新
         NSData *data = characteristic.value;
         const uint8_t *bytes = data.bytes;
         NSInteger length = data.length;
@@ -191,6 +213,7 @@
     
 }
 
+#pragma mark - 范围判断
 - (NSString *)weightSandard:(float)weight {
     NSString *str = @"";
     float bmi = weight / powf(self.height.text.floatValue / 100.0,2);
